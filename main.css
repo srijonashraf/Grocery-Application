@@ -39,7 +39,9 @@ body {
 .font-x-large{
     font-size: x-large;
 }
-
+.font-regular{
+    font-size: large;
+}
 .flex{
     display: flex;
 }
@@ -133,17 +135,15 @@ body {
     box-shadow: none;
 }
 
-.search-button {
-	/* height: 35px;
-    width: auto; */
-    padding: 8px 20px;
-	background-color: rgb(255, 135, 44);
-	border-radius: 5px;
+.login-button {
+    padding: 5px 12px;
+	background-color: rgba(255, 128, 30, 0.938);
+	border-radius: 0.25rem;
 	border-style: none;
 	color: white;
 }
 
-.search-button:hover {
+.login-button:hover {
 	background-color: rgb(41, 41, 41);
 	cursor: pointer;
 }
