@@ -114,26 +114,25 @@ body {
 }
 
 .searcharea{
-    height: 60px;
-    width: 100%;
-    background-color: white;
-    border-bottom: 1px solid rgb(238, 238, 238);
-    display: flex;
-    align-items: center;
-
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
 
 .searcharea form{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
 }
 
-.searcharea form input{
-    border-radius: 0px;
-    border-style: none;
-    box-shadow: none;
+.searcharea input[type="text"]{
+    border: 0px;
+	width: 67vw;
+    height: auto;
+	padding: 10px 10px;
+}
+
+.searcharea input[type="text"]:focus{
+    outline: 0;
 }
 
 .login-button {
@@ -148,3 +147,20 @@ body {
 	background-color: rgb(41, 41, 41);
 	cursor: pointer;
 }
+
+.slides{
+    /* for setting up background image */
+	background-image: url(../Grocery-Application/img/slider-1.jpeg);
+	/* for setting up image size */
+	background-size: cover;
+	/* for setting up background position (top, bottom, center, left etc) */
+	background-position: center;
+	/* for setting up text color */
+	color: white;
+	/* for setting up text align (left, right, center etc) */
+	text-align: center;
+}
+/* .slides .shadow {
+	padding: 140px 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+} */
