@@ -18,7 +18,15 @@ h4,
 h5,
 h6,
 form {
-    margin: 0px;
+    margin: 0px !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.black{
+    color:black !important;
 }
 
 ul {
@@ -43,6 +51,14 @@ body {
     font-size: x-large;
 }
 
+.font-400{
+    font-weight: 400;
+}
+
+.font-500{
+    font-weight: 500;
+
+}
 .text-sm {
 
     font-size: .875rem;
@@ -52,6 +68,7 @@ body {
 
 .flex {
     display: flex;
+    flex-direction: row;
 }
 
 .flex-col {
@@ -154,7 +171,7 @@ body {
 }
 
 .slider {
-    background: url(./img/slider-1.jpg) no-repeat;
+    background: url(./img/slider-1.png) no-repeat;
     background-position: right;
     background-size: cover;
     display: flex;
@@ -163,14 +180,6 @@ body {
     justify-content: center;
     padding: 10rem;
 }
-
-/* .slider-div {
-    padding: 8rem 0rem;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: -10rem;
-} */
 
 .slider form {
     position: relative;
@@ -186,4 +195,18 @@ body {
     padding: 10px 10px;
     position: relative;
     top: -10rem;
+}
+
+.product-group{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product{
+    margin-right: 20px;
+    margin: 20px;
+}
+
+.product img{
+    height: 15vw;
 }
