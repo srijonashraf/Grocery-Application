@@ -218,5 +218,11 @@ body {
 }
 
 .products button:hover{
-    background-color: rgba(255, 128, 30, 0.938);
+    background-color: rgb(41, 41, 41);
+    outline: none;
+    border: none;
+}
+
+.products button:active{
+    background-color: rgb(41, 41, 41) !important;
 }
