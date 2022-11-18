@@ -208,5 +208,15 @@ body {
 }
 
 .product img{
-    height: 15vw;
+    height: 13vw;
+}
+
+.products button{
+    background-color: rgba(255, 128, 30, 0.938);
+    outline: none;
+    border: none;
+}
+
+.products button:hover{
+    background-color: rgba(255, 128, 30, 0.938);
 }
