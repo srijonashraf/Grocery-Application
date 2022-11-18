@@ -1,8 +1,8 @@
 * {
-	margin: 0px;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,70 +18,72 @@ h4,
 h5,
 h6,
 form {
-	margin: 0px;
+    margin: 0px;
 }
 
-ul{
+ul {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0 !important;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+.font-small {
+    font-size: small;
+}
 
-.font-semibold{
+.font-semibold {
     font-weight: 600;
 }
 
-.font-x-large{
+.font-x-large {
     font-size: x-large;
 }
-.font-regular{
-    font-size: large;
+
+.text-sm {
+
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight:300;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
-.flex-col{
+.flex-col {
     display: flex;
     flex-direction: column;
 }
 
-
-.items-center{
+.items-center {
     align-items: center;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.h-auto{
+.h-auto {
     height: auto;
 }
 
-.w-auto{
+.w-auto {
     width: auto;
 }
 
-.gap{
+.gap {
     gap: 0.5rem;
 }
 
-.logo{
+.logo {
     width: 2.0rem;
 }
 
-.text-gray-400{
-    font-weight: 400;
-    color: rgb(90, 90, 90);
-}
-
-.left{
+.left {
     overflow: auto;
     position: fixed;
     height: 100vh;
@@ -94,91 +96,94 @@ body {
 }
 
 
-.left ul a{
+.left ul a {
     text-decoration: none;
     color: rgb(90, 90, 90) !important;
     display: flex;
     gap: 10px;
 }
 
-.left ul a:hover{
+.left ul a:hover {
     color: rgb(41, 41, 41) !important;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 
-.right{
+.right {
     position: relative;
     left: 230px;
     width: calc(100vw - 230px);
 }
 
-.searcharea{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+.searcharea {
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.11); */
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 5px;
 }
 
-.searcharea form{
+.searcharea form {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: auto;
+    
 }
 
-.searcharea input[type="text"]{
+.searcharea input[type="text"] {
     border: 0px;
-	width: 67vw;
+    width: 67vw;
     height: auto;
-	padding: 10px 10px;
+    padding: 10px 10px;
+    
 }
 
-.searcharea input[type="text"]:focus{
+.searcharea input[type="text"]:focus {
     outline: 0;
 }
 
 .login-button {
     padding: 5px 12px;
-	background-color: rgba(255, 128, 30, 0.938);
-	border-radius: 0.25rem;
-	border-style: none;
-	color: white;
+    background-color: rgba(255, 128, 30, 0.938);
+    border-radius: 0.25rem;
+    border-style: none;
+    color: white;
 }
 
 .login-button:hover {
-	background-color: rgb(41, 41, 41);
-	cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
 }
 
-.slides{
-    /* for setting up background image */
-	background-image: url(../Grocery-Application/img/slider-1.jpeg);
-	/* for setting up image size */
-	background-size: cover;
-	/* for setting up background position (top, bottom, center, left etc) */
-	background-position: center;
-	/* for setting up text color */
-	color: white;
-	/* for setting up text align (left, right, center etc) */
-	text-align: center;
-}
-/* .slides .shadow {
-	padding: 140px 0px;
-	background-color: rgba(0, 0, 0, 0.6);
-} */
-
-.slider{
+.slider {
+    background: url(./img/slider-1.jpg) no-repeat;
+    background-position: right;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 10rem;
 }
-.slider form{
+
+/* .slider-div {
+    padding: 8rem 0rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -10rem;
+} */
+
+.slider form {
     position: relative;
     top: 10rem;
 }
-.slider input[type="text"]{
+
+.slider input[type="text"] {
     border: 1px solid rgba(0, 0, 0, 0.11);
     background: none;
     border-radius: 0.25rem;
-	width: 67vw;
+    width: 67vw;
     height: auto;
-	padding: 10px 10px;
+    padding: 10px 10px;
+    position: relative;
+    top: -10rem;
 }
