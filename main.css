@@ -133,6 +133,7 @@ body {
 }
 
 .searcharea {
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.11); */
     box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 5px;
 }
 
@@ -199,7 +200,6 @@ body {
 .product-group{
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .product{
@@ -209,4 +209,14 @@ body {
 
 .product img{
     height: 13vw;
+}
+
+.products button{
+    background-color: rgba(255, 128, 30, 0.938);
+    outline: none;
+    border: none;
+}
+
+.products button:hover{
+    background-color: rgba(255, 128, 30, 0.938);
 }
