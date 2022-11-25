@@ -31,7 +31,7 @@
                 </a>
 
             <ul class="mt-5 flex-col justify-center">
-                <li><a href="#" class="mt-3 flex items-center"><i class="fa-solid fa-industry"></i> All Category</a></li>
+                <li><a href="index.html" class="mt-3 flex items-center"><i class="fa-solid fa-industry"></i> All Category</a></li>
                 <li><a href="#" class="mt-3 flex items-center"><i class="fa-solid fa-house"></i> Home & Cleaning</a></li>
                 <li><a href="#" class="mt-3 flex items-center"><i class="fa-solid fa-briefcase-medical"></i> Beauty & Health</a></li>
                 <li><a href="#" class="mt-3 flex items-center"><i class="fa-solid fa-burger"></i> Food</a></li>
@@ -49,8 +49,35 @@
                         <input class="text-sm" type="text" placeholder="Khoj The Search">
                     </div>
                     <div class="after-input">
+
                         <a href="#"><i class="fa-solid fa-cart-shopping px-3 text-muted"></i></a>
-                        <button type="submit" class="login-button text-sm">Login</button>
+                        <button onclick="document.getElementById('id01').style.display='block'" class="login-button text-sm" style="width:auto;">Login</button>
+                        <div id="id01" class="modal">
+  
+                            <form class="modal-content animate" action="" method="post">
+                          
+                              <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                <button class="form-login" type="submit">Login</button>
+                                <label class="flex justify-between">
+                                    <div>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </div>
+                                  <div class="div">
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                  </div>
+                                  
+                                </label>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                              </div>
+                            </form>
+                          </div>
+
                     </div>
                   </form>
             </section>
@@ -157,9 +184,9 @@
 
             <footer class="footer-area mt-5 font-400">
                 <div class="footer-middle py-5 mx-5 text-center">
-                   <p>Contact</p>
-                   <p>Bazar</p>
-                   <a href=""><p>info@bazar.com</p></a>
+                   <a href="#"><p>Contact</a></p>
+                   <a href="#"><p>Bazar</a></p>
+                   <a href="#"><p>info@bazar.com</p></a>
                    <p>Daffodil International University</p>
                 </div>
                 
@@ -169,6 +196,18 @@
 
 
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
 </body>
 
 </html>
