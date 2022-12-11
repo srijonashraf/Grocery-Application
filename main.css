@@ -10,6 +10,7 @@
     outline: none;
 }
 
+
 p,
 h1,
 h2,
@@ -21,12 +22,12 @@ form {
     margin: 0px !important;
 }
 
-a{
+a {
     text-decoration: none !important;
 }
 
-.black{
-    color:black !important;
+.black {
+    color: black !important;
 }
 
 ul {
@@ -51,19 +52,20 @@ body {
     font-size: x-large;
 }
 
-.font-400{
+.font-400 {
     font-weight: 400;
 }
 
-.font-500{
+.font-500 {
     font-weight: 500;
 
 }
+
 .text-sm {
 
     font-size: .875rem;
     line-height: 1.25rem;
-    font-weight:300;
+    font-weight: 300;
 }
 
 .flex {
@@ -84,8 +86,7 @@ body {
     justify-content: center;
 }
 
-.justify-between
-{
+.justify-between {
     justify-content: space-between;
 }
 
@@ -134,7 +135,7 @@ body {
 .right {
     position: relative;
     left: 230px;
-    width: calc(100vw - 230px);
+    width: 87%;
 }
 
 .searcharea {
@@ -147,15 +148,15 @@ body {
     align-items: center;
     justify-content: space-between;
     width: auto;
-    
+
 }
+
 
 .searcharea input[type="text"] {
     border: 0px;
-    width: 67vw;
+    width: 30vw !important;
     height: auto;
     padding: 10px 10px;
-    
 }
 
 .searcharea input[type="text"]:focus {
@@ -169,6 +170,7 @@ body {
     border-style: none;
     color: white;
 }
+
 
 .login-button:hover {
     background-color: rgb(41, 41, 41);
@@ -202,76 +204,77 @@ body {
     top: -10rem;
 }
 
-.product-group{
+.product-group {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.product{
+.product {
     margin-right: 20px;
     margin: 20px;
     width: 20rem;
-    height: 20rem;    
+    height: 20rem;
 }
 
-.product img{
+.product img {
     height: 13vw;
 }
 
-.products button{
+.products button {
     background-color: rgba(255, 128, 30, 0.938);
     outline: none;
     border: none;
 }
 
-.products button:hover{
+.products button:hover {
     background-color: rgb(41, 41, 41);
     outline: none;
     border: none;
 }
 
-.products button:active{
+.products button:active {
     background-color: rgb(41, 41, 41) !important;
 }
 
-footer{
+footer {
     background-color: rgba(255, 128, 30, 0.938);
     color: white;
 }
 
-.footer-middle{
+.footer-middle {
     line-height: 2rem;
-    
+
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     color: white;
 }
 
 
-.container{
+.container {
     background-color: white;
     padding: 30px 50px !important;
 }
 
 /* Full-width input fields */
-.container input[type=text], input[type=password] {
+.container input[type=text],
+input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
-  
+}
 
- .form-login {
+
+.form-login {
     background-color: rgba(255, 128, 30, 0.938);
     color: white;
     padding: 14px 20px;
@@ -279,14 +282,14 @@ footer a:hover{
     border: none;
     cursor: pointer;
     width: 100%;
-  }
-  
-  .form-login:hover {
+}
+
+.form-login:hover {
     background-color: rgb(41, 41, 41)
-  }
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
     display: flex;
     margin: 10px 0px;
     width: auto;
@@ -295,45 +298,64 @@ footer a:hover{
     border: none;
     color: white;
     border-radius: 0.25rem;
-  }
+}
 
-  .cancelbtn:hover{
+.cancelbtn:hover {
     background-color: rgb(41, 41, 41)
-  }
-  
+}
 
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left:0;
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.6); /* Fallback color */
-    background-color: rgba(0,0,0,0,1); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0, 1);
+    /* Black w/ opacity */
     padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 100%; /* Could be more or less, depending on screen size */
-  }
-  
-  
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+}
+
+/*@media only screen and (max-width: 1275) {*/
+/*  .searcharea input[type="text"] {*/
+/*    border: 0px;*/
+/*    width: 50vw;*/
+/*    height: auto;*/
+/*    padding: 10px 10px;*/
+
+/*}*/
+/*}*/
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
     span.psw {
-       display: block;
-       float: none;
+        display: block;
+        float: none;
     }
+
     .cancelbtn {
-       width: 100%;
+        width: 100%;
     }
-  }
+}
